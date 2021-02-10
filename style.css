@@ -1,0 +1,78 @@
+body{ background-color: rgba(0, 0, 0, 0.5);}
+ 
+ h1{ font-family: lores-15, sans-serif;
+
+    font-weight: 700;
+    color: #7c2437;
+    font-style: normal;;
+    text-align: center;
+  
+   
+
+ }
+
+
+h2{font-family: Arial, Helvetica, sans-serif
+
+    font-weight: 700;
+    
+    
+    font-style: normal;
+    
+    color: rgb(27, 206, 27) ;
+    
+    font-size: 1em;
+    text-align: center;
+   
+}
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 2px solid #7c2437;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(125, 165, 224);
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: #7c2437;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+#hole{
+    width: 200px;
+    height: 150px;
+    background-color:  rgb(125, 165, 224);
+    position: relative;
+    left: 400px;
+    top:-500px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left: 400px;}
+    100%{left: -50px;}
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+  
+}
+
+
+
